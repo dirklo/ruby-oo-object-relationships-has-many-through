@@ -168,7 +168,7 @@ describe "Object relationships" do
         howard.new_meal(andrew, 15, 5)
         daniel.new_meal(terrance, 20, 1)
         daniel.new_meal(esmery, 15, 3)
-        
+
         expect(terrance.meals.length).to eq(2)
         expect(terrance.meals.first.customer).to eq(howard)
         expect(terrance.meals.last.customer).to eq(daniel)
